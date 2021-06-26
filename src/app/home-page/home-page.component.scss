@@ -1,0 +1,49 @@
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.posts {
+  margin: 7rem 0;
+}
+
+.post {
+  margin-bottom: 2.5rem;
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+.pagination {
+  display: flex;
+  margin-bottom: 7rem;
+
+  &-bullet {
+    span,
+    a {
+      display: inline-block;
+      border: 1px solid #000;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      margin-top: 0;
+      color: #000;
+    }
+
+    a {
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+
+    span {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+}

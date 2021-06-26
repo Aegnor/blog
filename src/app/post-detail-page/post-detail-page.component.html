@@ -1,0 +1,21 @@
+<article class="post-detail" *ngIf="post$ | async as post; else loading">
+  <h1 class="main-title">{{post.title}}</h1>
+  <p>{{post.body}}</p>
+  <div class="author" *ngIf="author$ | async as author">
+      <h2>Author:</h2>
+      <p class="author-name">{{author?.name}}, {{author?.email}}</p>
+  </div>
+  <section class="comments-section" *ngIf="comments$ | async as comments">
+    <h2>Comments</h2>
+    <ul class="comments d-flex">
+      <li class="comment" *ngFor="let comment of comments">
+        <h3 class="comment-author">{{comment.email}}</h3>
+        <p class="comment-text">{{comment.body}}</p>
+      </li>
+    </ul>
+  </section>
+</article>
+
+<ng-template #loading>
+  <p class="loading">Loading</p>
+</ng-template>

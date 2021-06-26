@@ -1,0 +1,35 @@
+.login {
+  &-wrapper {
+    height: 100vh;
+    min-height: 300px;
+    padding: 3rem;
+  }
+
+  &-submit {
+    margin-top: 1rem;
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fieldset {
+  margin-top: 2rem;
+}
+
+.field {
+  margin-top: 1rem;
+  width: 400px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.validation {
+  font-size: 1.4rem;
+  margin-top: 0.3rem;
+  color: #da1414;
+}

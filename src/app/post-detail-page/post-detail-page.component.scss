@@ -1,0 +1,41 @@
+.post-detail {
+  margin: 7rem 0;
+}
+
+.main-title {
+  font-size: 3.3rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.author {
+  margin: 2rem 0;
+}
+
+.comments {
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+
+  &-section {
+    margin-top: 1rem;
+  }
+}
+
+.comment {
+  padding: 1rem;
+  margin: 0 1rem 1rem 0;
+  border: 1px solid #000;
+  width: calc(50% - 2rem);
+
+  &-author {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.loading {
+  text-align: center;
+  margin: 7rem 0;
+}

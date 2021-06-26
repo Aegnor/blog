@@ -1,0 +1,16 @@
+<h1 class="visually-hidden">List of posts</h1>
+<ul class="posts">
+  <li *ngFor="let post of posts" class="post">
+    <h2>{{post.title}}</h2>
+    <p>{{post.body}}</p>
+    <a [routerLink]="['/post', post.id]" class="button">Details</a>
+  </li>
+</ul>
+<ul class="pagination">
+  <li class="pagination-bullet" *ngFor="let page of postsPagesCount">
+    <span *ngIf="page === currentPage; else showPaginationLink">{{page}}</span>
+    <ng-template #showPaginationLink>
+      <a [routerLink]="['/posts/']" [queryParams]="{page: page}" (click)="onPagination(5 * page - 5)">{{page}}</a>
+    </ng-template>
+  </li>
+</ul>
